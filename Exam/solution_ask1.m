@@ -15,9 +15,7 @@ function solution_ask1()
     u0 = [0; 0];
 
     % Επίλυση με χρήση της έτοιμης συνάρτησης fsolve του MATLAB
-    % Η επιλογή 'Display', 'iter' προαιρετικά εμφανίζει την πορεία της λύσης
-    options = optimoptions('fsolve', 'Display', 'iter');
-    [sol, fval] = fsolve(F, u0, options);
+    [sol, fval] = fsolve(F, u0);
 
     % Εμφάνιση των τελικών αποτελεσμάτων
     fprintf('\nΛύση του συστήματος:\n');
