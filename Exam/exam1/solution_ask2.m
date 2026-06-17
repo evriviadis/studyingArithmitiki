@@ -14,7 +14,7 @@ df(x) = diff(f(x), x);
 figure;
 
 % Σχεδίαση της f(x)
-fplot(f(x), [-10, 10], 'DisplayName', 'f(x)', 'LineWidth', 1.5);
+fplot(f(x),   'DisplayName', 'f(x)', 'LineWidth', 1.5);
 hold on;
 
 % Σχεδίαση της παραγώγου f'(x)
